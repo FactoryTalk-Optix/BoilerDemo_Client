@@ -1,65 +1,66 @@
 Name: BoilerDemo_Client
-Id: g=9301d8c2903d85a46b85f9de44bf4f38
+Id: g=628d598938f26e7f4d4dcab4d1194f43
 Type: ProjectFolder
 Children:
 - Name: Localization
-  Id: g=d54c5a4e13a0e05f8a9a35310777a871
+  Id: g=c758ef33e34a5be66d58cfb44e7b2581
   Type: PropertyGroup
   Children:
   - Name: Locales
-    Id: g=0627d5a5bdbcbcc500cc896ff464b71b
+    Id: g=ccb3ece8a95c88e6ea79aa3b17de5fdf
     Type: BaseDataVariableType
     DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US"]
   - Name: LocaleFallbackList
-    Id: g=b8ce7ac3ba719225cf214a9b7b7927f2
+    Id: g=f3a0567d9c5c403476dd572925f4a985
     Type: BaseDataVariableType
     DataType: LocaleId
-    ReferenceType: HasProperty
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US"]
 - Name: Authentication
-  Id: g=269ed724fdaf7e2606a8ab4e12c1cbed
+  Id: g=163201d44f1a48196ecc3a784f50b4f5
   Type: PropertyGroup
   Children:
   - Name: DefaultUserFolder
-    Id: g=9ccf4386b17ca344897b4f32e9f23467
+    Id: g=7de0efc8cf1afb22136e433a5724ac16
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"8cdfe95c558e909385d4fe7ddc9a2655","Namespace":7}
+    Value: "/Objects/BoilerDemo_Client/Security/Users"
     Children:
     - Name: Kind
-      Id: g=c0fe5380621bcc782a806f561d4e2fbe
+      Id: g=e5dacf179214b5d05a0b29cbe56acca4
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
 - Name: PasswordPolicy
-  Id: g=989082ac30dadb3de7a30045f91867df
+  Id: g=95e815863a6a9b3616429e3ba09873f5
   Type: PasswordPolicy
   Children:
   - Name: MaximumPasswordAge
-    Id: g=d3cf623db59e90cece29b5e7b3c998a5
+    Id: g=80864cc8a497be28be8937497431d910
     Type: BaseDataVariableType
     DataType: UInt16
+    Value: 0
   - Name: EnforcePasswordHistory
-    Id: g=1aef54e99a5c8fa90afec8dd4f6121de
+    Id: g=1f86f1185f118766c423266e74475130
     Type: BaseDataVariableType
     DataType: Byte
     Value: 1
   - Name: MinimumPasswordAge
-    Id: g=2249e397f7398b346a67cf7faaedce57
+    Id: g=b84f96a505c2f7c08cb40fdbfa6c16e8
     Type: BaseDataVariableType
     DataType: UInt16
+    Value: 0
   - Name: MinimumPasswordLength
-    Id: g=35a88c57fec0f3ddaba06bbd804af013
+    Id: g=734f3367e723be4423c86b66c3b5de2f
     Type: BaseDataVariableType
     DataType: Byte
     Value: 8
 - Name: AlarmConfiguration
-  Id: g=6d1cbfacac50cb0baf5895857a0142c5
+  Id: g=12d0a6735644aa122bb16732eb3d5baf
   Type: PropertyGroup
 - File: UI/UI.yaml
 - File: Model/Model.yaml

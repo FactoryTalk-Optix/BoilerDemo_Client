@@ -3,7 +3,9 @@ using UAManagedCore;
 using FTOptix.NetLogic;
 using FTOptix.UI;
 using FTOptix.Alarm;
-using FTOptix.EventLogger;
+using FTOptix.OPCUAClient;
+using FTOptix.OPCUAServer;
+using FTOptix.WebUI;
 #endregion
 
 public class AlarmGridLogic : BaseNetLogic

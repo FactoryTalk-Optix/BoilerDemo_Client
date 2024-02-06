@@ -1,75 +1,80 @@
 Name: OPCUAClient1
-Id: g=509ffb2d6c5a726913bd64b228971e0d
+Id: g=c643944ccfd0b636b29b7ff9fd57ad9d
 Type: OPCUAClient
 Children:
 - Name: ServerEndpointURL
-  Id: g=ab2661f561776d0726d7b17faf114505
+  Id: g=6de7cedcba0e09b87ac362701472eb6f
   Type: BaseDataVariableType
   DataType: String
   Value: "opc.tcp://localhost:59100"
 - Name: MinimumMessageSecurityMode
-  Id: g=c946071f01215b7ca597e718dfe14690
+  Id: g=07d549e808fb2ff76fb699d46557f906
   Type: BaseDataVariableType
-  DataType: ns=28;MessageSecurityModeEnum
+  DataType: ns=32;MessageSecurityModeEnum
+  Value: 0
 - Name: MinimumSecurityPolicy
-  Id: g=39b7fd48203fef9a6041b82415aba248
+  Id: g=dc16b6b82ee37191defd33064c8b1924
   Type: BaseDataVariableType
-  DataType: ns=28;SecurityPolicyEnum
+  DataType: ns=32;SecurityPolicyEnum
+  Value: 0
 - Name: UserIdentityType
-  Id: g=5940c75d4511f0f158bbec492c2fb315
+  Id: g=76db8001906be541338a2b13c8ab9e76
   Type: BaseDataVariableType
   DataType: UserIdentityTypeEnum
+  Value: 0
 - Name: ConnectionStatus
-  Id: g=a9a92026872928e7914cd181bf09bdf9
+  Id: g=11d200a41a90db70f97bfed9a44ec815
   Type: BaseDataVariableType
   DataType: ConnectionStatusEnum
   AccessLevel: Read
+  Value: 0
 - Name: ServerUri
-  Id: g=21301aeb2fbf7ab08b585c0ae65216ce
+  Id: g=107dd2904767f9ea136e1d50e032373f
   Type: BaseDataVariableType
   DataType: String
   AccessLevel: Read
+  Value: ""
 - Name: Events
-  Id: g=f7596d770d02d031ee9c4626b07bfdb5
+  Id: g=f5ac73716ea1f8e465937838571e4b1a
   Type: BaseDataVariableType
   DataType: EventsEnum
   Value: 1
 - Name: RuntimeConfigurations
-  Id: g=e920189b5889fe4ce68a163b48e1e83e
+  Id: g=6073fc283d1357ed2e0bdc7cb293bc58
   Type: BaseObjectType
 - Class: Reference
-  Target: ns=28;i=8
+  Target: ns=32;i=8
   Direction: Forward
 - Class: Reference
-  Target: ns=28;i=9
+  Target: ns=32;i=9
   Direction: Forward
 - Class: Reference
-  Target: ns=28;i=54
+  Target: ns=32;i=54
   Direction: Forward
 - Class: Reference
-  Target: ns=28;i=57
+  Target: ns=32;i=57
   Direction: Forward
 - Class: Reference
-  Target: ns=28;i=91
+  Target: ns=32;i=91
   Direction: Forward
 - Class: Reference
-  Target: ns=28;i=60
+  Target: ns=32;i=60
   Direction: Forward
 - Class: Reference
-  Target: ns=28;i=63
+  Target: ns=32;i=63
   Direction: Forward
 - Class: Reference
-  Target: ns=28;i=83
+  Target: ns=32;i=83
   Direction: Forward
 - Class: Reference
-  Target: ns=28;i=75
+  Target: ns=32;i=75
   Direction: Forward
 - Name: Objects
-  Id: g=8edede1979acef76feebf3e6c6c7b0e3
+  Id: g=3f807f57718df9ba12c3ee45cc33c4fb
   Type: BaseObjectType
   Children:
-  - Name: ns=47;BoilerDemo
-    Id: ns=47;g=7552f9d326d044d670694582c6d00622
+  - Name: ns=8;BoilerDemo
+    Id: ns=8;g=7552f9d326d044d670694582c6d00622
     Type: ProjectFolder
     DisplayName: {"LocaleId":"","Text":"BoilerDemo"}
     Children:

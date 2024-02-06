@@ -1,11 +1,3 @@
-ProjectFiles/NetSolution/*.vs
-ProjectFiles/NetSolution/bin
-ProjectFiles/NetSolution/obj
-ProjectFiles/NetSolution/Private
-ProjectFiles/NetSolution/*.references
-ProjectFiles/UserDefinedModule.xml
-IDEVersion.txt
-
 /*
 !*.gitignore
 !*.gitattributes
@@ -14,6 +6,11 @@ IDEVersion.txt
 !Nodes/
 !ProjectFiles/
 !DesignTimeNodes/
-
+ProjectFiles/NetSolution/*.vs
+ProjectFiles/NetSolution/bin
+ProjectFiles/NetSolution/obj
+ProjectFiles/NetSolution/Private
+ProjectFiles/NetSolution/*.references
+ProjectFiles/UserDefinedModule.xml
 !README.md
 !LICENSE
