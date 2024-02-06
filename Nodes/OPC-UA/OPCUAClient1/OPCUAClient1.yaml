@@ -1,46 +1,41 @@
-Name: OPCUAClient
-Id: g=9f78eb2f1f373feb2ad5ccb7e29a5e21
+Name: OPCUAClient1
+Id: g=509ffb2d6c5a726913bd64b228971e0d
 Type: OPCUAClient
 Children:
 - Name: ServerEndpointURL
-  Id: g=9d6539c78dc906748451572b364cb128
+  Id: g=ab2661f561776d0726d7b17faf114505
   Type: BaseDataVariableType
   DataType: String
-  Value: "opc.tcp://127.0.0.1:59100"
+  Value: "opc.tcp://localhost:59100"
 - Name: MinimumMessageSecurityMode
-  Id: g=fb98aab256cff36edb678a75d624d8a6
+  Id: g=c946071f01215b7ca597e718dfe14690
   Type: BaseDataVariableType
   DataType: ns=28;MessageSecurityModeEnum
-  Value: 0
 - Name: MinimumSecurityPolicy
-  Id: g=de5f7b42eba591a53fff1561d132b975
+  Id: g=39b7fd48203fef9a6041b82415aba248
   Type: BaseDataVariableType
   DataType: ns=28;SecurityPolicyEnum
-  Value: 0
 - Name: UserIdentityType
-  Id: g=2f83b81d23f7857fc67791ce0ccf629a
+  Id: g=5940c75d4511f0f158bbec492c2fb315
   Type: BaseDataVariableType
   DataType: UserIdentityTypeEnum
-  Value: 0
 - Name: ConnectionStatus
-  Id: g=c0315820d72187bdb040cc607979c546
+  Id: g=a9a92026872928e7914cd181bf09bdf9
   Type: BaseDataVariableType
   DataType: ConnectionStatusEnum
   AccessLevel: Read
-  Value: 0
 - Name: ServerUri
-  Id: g=d4c8868abe8187fe745e2d98640a05c0
+  Id: g=21301aeb2fbf7ab08b585c0ae65216ce
   Type: BaseDataVariableType
   DataType: String
   AccessLevel: Read
-  Value: ""
 - Name: Events
-  Id: g=0e112ef200738542ec82cb6b628d16c5
+  Id: g=f7596d770d02d031ee9c4626b07bfdb5
   Type: BaseDataVariableType
   DataType: EventsEnum
-  Value: 2
+  Value: 1
 - Name: RuntimeConfigurations
-  Id: g=c3d8867db5356ea36dd84f56176f3329
+  Id: g=e920189b5889fe4ce68a163b48e1e83e
   Type: BaseObjectType
 - Class: Reference
   Target: ns=28;i=8
@@ -69,18 +64,13 @@ Children:
 - Class: Reference
   Target: ns=28;i=75
   Direction: Forward
-- Name: VerifyServerIdentity
-  Id: g=f6b1f3cd1f0a171478fb9f3d0805d99b
-  Type: BaseDataVariableType
-  DataType: Boolean
-  Value: false
 - Name: Objects
-  Id: g=3c3fa4ab1b77e7f109e9f6ef4663edab
+  Id: g=8edede1979acef76feebf3e6c6c7b0e3
   Type: BaseObjectType
   Children:
-  - Name: ns=8;BoilerDemo
-    Id: ns=8;g=7552f9d326d044d670694582c6d00622
-    Type: BaseObjectType
+  - Name: ns=47;BoilerDemo
+    Id: ns=47;g=7552f9d326d044d670694582c6d00622
+    Type: ProjectFolder
     DisplayName: {"LocaleId":"","Text":"BoilerDemo"}
     Children:
     - File: Loggers/Loggers.yaml

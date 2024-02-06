@@ -2,6 +2,8 @@
 using UAManagedCore;
 using FTOptix.NetLogic;
 using FTOptix.UI;
+using FTOptix.Alarm;
+using FTOptix.EventLogger;
 #endregion
 
 public class AlarmGridLogic : BaseNetLogic
@@ -11,16 +13,16 @@ public class AlarmGridLogic : BaseNetLogic
         alarmsDataGridModel = Owner.Get<DataGrid>("AlarmsDataGrid").GetVariable("Model");
 
         var currentSession = LogicObject.Context.Sessions.CurrentSessionInfo;
-        actualLanguagesVariable = currentSession.SessionObject.Get<IUAVariable>("ActualLanguage");
-        actualLanguagesVariable.VariableChange += OnSessionActualLanguagesChange;
+        actualLanguageVariable = currentSession.SessionObject.Get<IUAVariable>("ActualLanguage");
+        actualLanguageVariable.VariableChange += OnSessionActualLanguageChange;
     }
 
     public override void Stop()
     {
-        actualLanguagesVariable.VariableChange -= OnSessionActualLanguagesChange;
+        actualLanguageVariable.VariableChange -= OnSessionActualLanguageChange;
     }
 
-    public void OnSessionActualLanguagesChange(object sender, VariableChangeEventArgs e)
+    public void OnSessionActualLanguageChange(object sender, VariableChangeEventArgs e)
     {
         var dynamicLink = alarmsDataGridModel.GetVariable("DynamicLink");
         if (dynamicLink == null)
@@ -33,5 +35,5 @@ public class AlarmGridLogic : BaseNetLogic
     }
 
     private IUAVariable alarmsDataGridModel;
-    private IUAVariable actualLanguagesVariable;
+    private IUAVariable actualLanguageVariable;
 }

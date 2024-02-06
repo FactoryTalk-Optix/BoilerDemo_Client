@@ -1,410 +1,404 @@
-Name: ns=8;Loggers
-Id: ns=8;g=a5673a0dd8654e636716d658d3704934
-Type: FolderType
+Name: ns=47;Loggers
+Id: ns=47;g=a5673a0dd8654e636716d658d3704934
+Type: LoggersCategoryFolder
 DisplayName: {"LocaleId":"","Text":"Loggers"}
 Children:
-- Name: ns=8;DataLogger
-  Id: ns=8;g=ff2352bd4e543d470adadc94ca9748b1
+- Name: ns=47;DataLogger
+  Id: ns=47;g=ff2352bd4e543d470adadc94ca9748b1
   Type: DataLogger
   DisplayName: {"LocaleId":"","Text":"DataLogger"}
   Children:
   - Name: SamplingMode
-    Id: ns=8;g=ff7ee40e8018452d236b360c52043152
+    Id: ns=47;g=ff7ee40e8018452d236b360c52043152
     Type: PropertyType
     DataType: SamplingModeEnum
     DisplayName: {"LocaleId":"","Text":"SamplingMode"}
     Value: 1
   - Name: Store
-    Id: ns=8;g=b6941ce3253a6467d3185f5ccd44a377
+    Id: ns=47;g=b6941ce3253a6467d3185f5ccd44a377
     Type: NodePointer
     DataType: NodeId
     DisplayName: {"LocaleId":"","Text":"Store"}
-    Value: {"IdType":2,"Id":"b64b1a3c83f8b66c8afbfccb5cec04d9","Namespace":8}
+    Value: "/Objects/BoilerDemo_Client/OPC-UA/OPCUAClient1/Objects/BoilerDemo/DataStores/EmbeddedDatabase"
     Children:
     - Name: Kind
-      Id: ns=8;g=199ebb6f7c423c870d158b5b58b84374
+      Id: ns=47;g=199ebb6f7c423c870d158b5b58b84374
       Type: PropertyType
       DataType: NodeId
       DisplayName: {"LocaleId":"","Text":"Kind"}
-      Value: {"Id":1,"Namespace":38}
   - Name: VariablesToLog
-    Id: ns=8;g=57e348312be9b2683a9a90f53d8da1aa
+    Id: ns=47;g=57e348312be9b2683a9a90f53d8da1aa
     Type: BaseObjectType
     DisplayName: {"LocaleId":"","Text":"VariablesToLog"}
     Children:
-    - Name: ns=8;Boiler level
-      Id: ns=8;g=bb0dfaa3dc872f06cc15e58c03bf6b95
+    - Name: ns=47;Boiler level
+      Id: ns=47;g=bb0dfaa3dc872f06cc15e58c03bf6b95
       Type: VariableToLog
       DataType: BaseDataType
       DisplayName: {"LocaleId":"","Text":"Boiler level"}
-      Value: {"Type":11,"Body":49.0}
       Children:
       - Name: LastValue
-        Id: ns=8;g=e35aa935d50e6af6f34230f229eaedad
+        Id: ns=47;g=e35aa935d50e6af6f34230f229eaedad
         Type: PropertyType
-        DataType: Double
+        DataType: BaseDataType
         DisplayName: {"LocaleId":"","Text":"LastValue"}
-        Value: 49.0
       - Name: Timestamp
-        Id: ns=8;g=3dc30c9d09a07056f69b4aa689ed62a2
+        Id: ns=47;g=3dc30c9d09a07056f69b4aa689ed62a2
         Type: PropertyType
         DataType: UtcTime
         DisplayName: {"LocaleId":"","Text":"Timestamp"}
-        Value: "2022-09-02T08:00:02.6107489"
+        Value: "2024-02-05T16:24:58.9636876"
       - Name: LastOperationCode
-        Id: ns=8;g=7ce0d91d9da6803fe9df6d4a2ebcb874
+        Id: ns=47;g=7ce0d91d9da6803fe9df6d4a2ebcb874
         Type: PropertyType
         DataType: StatusCode
         DisplayName: {"LocaleId":"","Text":"LastOperationCode"}
-        Value: 0
-    - Name: ns=8;Boiler temp
-      Id: ns=8;g=98722705b17397882aaae5ab9586b82e
+        Value: 2150694912
+    - Name: ns=47;Boiler temp
+      Id: ns=47;g=98722705b17397882aaae5ab9586b82e
       Type: VariableToLog
       DataType: BaseDataType
       DisplayName: {"LocaleId":"","Text":"Boiler temp"}
-      Value: {"Type":11,"Body":32.02028960733246}
       Children:
       - Name: LastValue
-        Id: ns=8;g=ff7c40e83f5a8e7680099d11f6a2ebac
+        Id: ns=47;g=ff7c40e83f5a8e7680099d11f6a2ebac
         Type: PropertyType
-        DataType: Double
+        DataType: BaseDataType
         DisplayName: {"LocaleId":"","Text":"LastValue"}
-        Value: 31.921630368152947
       - Name: Timestamp
-        Id: ns=8;g=d0cfb556381ce1b95693f35ee1c5e038
+        Id: ns=47;g=d0cfb556381ce1b95693f35ee1c5e038
         Type: PropertyType
         DataType: UtcTime
         DisplayName: {"LocaleId":"","Text":"Timestamp"}
-        Value: "2022-09-02T08:00:02.6107489"
+        Value: "2024-02-05T16:24:58.9636876"
       - Name: LastOperationCode
-        Id: ns=8;g=069ccb90a5f24d61c58b9ec76fac2d33
+        Id: ns=47;g=069ccb90a5f24d61c58b9ec76fac2d33
         Type: PropertyType
         DataType: StatusCode
         DisplayName: {"LocaleId":"","Text":"LastOperationCode"}
-        Value: 0
-    - Name: ns=8;Tank 2 level
-      Id: ns=8;g=80a3a62cd365c33e480fa4d3d98c054c
+        Value: 2150694912
+    - Name: ns=47;Tank 2 level
+      Id: ns=47;g=80a3a62cd365c33e480fa4d3d98c054c
       Type: VariableToLog
       DataType: BaseDataType
       DisplayName: {"LocaleId":"","Text":"Tank 2 level"}
-      Value: {"Type":10,"Body":49.0}
       Children:
       - Name: LastValue
-        Id: ns=8;g=5632e9e9ef1d2fcede7d44460757fc2e
+        Id: ns=47;g=5632e9e9ef1d2fcede7d44460757fc2e
         Type: PropertyType
-        DataType: Float
+        DataType: BaseDataType
         DisplayName: {"LocaleId":"","Text":"LastValue"}
-        Value: 49.0
       - Name: Timestamp
-        Id: ns=8;g=3b7a282475b3ae728df9378bbbf13cf4
+        Id: ns=47;g=3b7a282475b3ae728df9378bbbf13cf4
         Type: PropertyType
         DataType: UtcTime
         DisplayName: {"LocaleId":"","Text":"Timestamp"}
-        Value: "2022-09-02T08:00:02.6107489"
+        Value: "2024-02-05T16:24:58.9636876"
       - Name: LastOperationCode
-        Id: ns=8;g=d42bdf2d56de38d4f6c2a9176f0f8e90
+        Id: ns=47;g=d42bdf2d56de38d4f6c2a9176f0f8e90
         Type: PropertyType
         DataType: StatusCode
         DisplayName: {"LocaleId":"","Text":"LastOperationCode"}
-        Value: 0
-    - Name: ns=8;Tank 1 level
-      Id: ns=8;g=187139c81466c62d11ef645549b1b5ee
+        Value: 2147811328
+    - Name: ns=47;Tank 1 level
+      Id: ns=47;g=187139c81466c62d11ef645549b1b5ee
       Type: VariableToLog
       DataType: BaseDataType
       DisplayName: {"LocaleId":"","Text":"Tank 1 level"}
-      Value: {"Type":10,"Body":1.0}
       Children:
       - Name: LastValue
-        Id: ns=8;g=9cea5811f642d48762fc72d0c256ada9
+        Id: ns=47;g=9cea5811f642d48762fc72d0c256ada9
         Type: PropertyType
-        DataType: Float
+        DataType: BaseDataType
         DisplayName: {"LocaleId":"","Text":"LastValue"}
-        Value: 1.0
       - Name: Timestamp
-        Id: ns=8;g=71f279dedddace3af0701be463bde3cf
+        Id: ns=47;g=71f279dedddace3af0701be463bde3cf
         Type: PropertyType
         DataType: UtcTime
         DisplayName: {"LocaleId":"","Text":"Timestamp"}
-        Value: "2022-09-02T08:00:02.6107489"
+        Value: "2024-02-05T16:24:58.9636876"
       - Name: LastOperationCode
-        Id: ns=8;g=bc8f57153e007532f2c0b254b3a19f02
+        Id: ns=47;g=bc8f57153e007532f2c0b254b3a19f02
         Type: PropertyType
         DataType: StatusCode
         DisplayName: {"LocaleId":"","Text":"LastOperationCode"}
-        Value: 0
+        Value: 2147811328
   - Class: Reference
     Target: ns=42;i=21
     Direction: Forward
   - Name: LogLocalTime
-    Id: ns=8;g=927c7f83032002a02970dffa95e90d28
+    Id: ns=47;g=927c7f83032002a02970dffa95e90d28
     Type: PropertyType
     DataType: Boolean
     DisplayName: {"LocaleId":"","Text":"LogLocalTime"}
     Value: true
-- Name: ns=8;AlarmsEventLogger
-  Id: ns=8;g=5c0e323e6bf05aabd26cb311e39ed107
+- Name: ns=47;AlarmsEventLogger
+  Id: ns=47;g=5c0e323e6bf05aabd26cb311e39ed107
   Type: EventLogger
   DisplayName: {"LocaleId":"","Text":"AlarmsEventLogger"}
   Children:
   - Name: Enabled
-    Id: ns=8;g=ca1579935bb741f12857391593c83bdf
+    Id: ns=47;g=ca1579935bb741f12857391593c83bdf
     Type: PropertyType
     DataType: Boolean
     DisplayName: {"LocaleId":"","Text":"Enabled"}
     Value: true
   - Name: Store
-    Id: ns=8;g=7aa0dec23f500bf0fe2546e4f502e26a
+    Id: ns=47;g=7aa0dec23f500bf0fe2546e4f502e26a
     Type: NodePointer
     DataType: NodeId
     DisplayName: {"LocaleId":"","Text":"Store"}
-    Value: {"IdType":2,"Id":"b64b1a3c83f8b66c8afbfccb5cec04d9","Namespace":8}
+    Value: "/Objects/BoilerDemo_Client/OPC-UA/OPCUAClient1/Objects/BoilerDemo/DataStores/EmbeddedDatabase"
     Children:
     - Name: Kind
-      Id: ns=8;g=34e646917d83577403ab57187c088210
+      Id: ns=47;g=34e646917d83577403ab57187c088210
       Type: PropertyType
       DataType: NodeId
       DisplayName: {"LocaleId":"","Text":"Kind"}
-      Value: {"Id":1,"Namespace":38}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
     - Name: NodeClass
-      Id: ns=8;g=d69bdee4b13c8e08fc726122ddbbc526
+      Id: ns=47;g=d69bdee4b13c8e08fc726122ddbbc526
       Type: PropertyType
       DataType: NodePointerNodeClass
       DisplayName: {"LocaleId":"","Text":"NodeClass"}
-      Value: 0
   - Name: EventFieldPaths
-    Id: ns=8;g=95dc3d62880d2155c107917c2ce79248
+    Id: ns=47;g=95dc3d62880d2155c107917c2ce79248
     Type: BaseObjectType
     DisplayName: {"LocaleId":"","Text":"EventFieldPaths"}
     Children:
-    - Name: ns=8;ActiveState_Id
-      Id: ns=8;g=4e1974acb6b23e4096025941c26a0f5d
+    - Name: ns=47;ActiveState_Id
+      Id: ns=47;g=4e1974acb6b23e4096025941c26a0f5d
       Type: EventFieldPath
       DataType: NodePath
       DisplayName: {"LocaleId":"","Text":"ActiveState_Id"}
       Value: "0:ActiveState/0:Id"
-    - Name: ns=8;AckedState_Id
-      Id: ns=8;g=94d6aa3111301a22dd56075525c035e5
+    - Name: ns=47;AckedState_Id
+      Id: ns=47;g=94d6aa3111301a22dd56075525c035e5
       Type: EventFieldPath
       DataType: NodePath
       DisplayName: {"LocaleId":"","Text":"AckedState_Id"}
       Value: "0:AckedState/0:Id"
-    - Name: ns=8;ConfirmedState_Id
-      Id: ns=8;g=87d2f98db9aea0e94bcc13caaa94df5c
+    - Name: ns=47;ConfirmedState_Id
+      Id: ns=47;g=87d2f98db9aea0e94bcc13caaa94df5c
       Type: EventFieldPath
       DataType: NodePath
       DisplayName: {"LocaleId":"","Text":"ConfirmedState_Id"}
       Value: "0:ConfirmedState/0:Id"
-    - Name: ns=8;ConditionName
-      Id: ns=8;g=4434af2e2c45a463cd77e4c9d252f7a1
+    - Name: ns=47;ConditionName
+      Id: ns=47;g=4434af2e2c45a463cd77e4c9d252f7a1
       Type: EventFieldPath
       DataType: NodePath
       DisplayName: {"LocaleId":"","Text":"ConditionName"}
       Value: "0:ConditionName"
-    - Name: ns=8;EnabledState_Id
-      Id: ns=8;g=d3cf8176a8bad98bd0640604a281b11b
+    - Name: ns=47;EnabledState_Id
+      Id: ns=47;g=d3cf8176a8bad98bd0640604a281b11b
       Type: EventFieldPath
       DataType: NodePath
       DisplayName: {"LocaleId":"","Text":"EnabledState_Id"}
       Value: "0:EnabledState/0:Id"
-    - Name: ns=8;SourceName
-      Id: ns=8;g=8f6e43ae1ae26e73f1b1f6e84f8613a5
+    - Name: ns=47;SourceName
+      Id: ns=47;g=8f6e43ae1ae26e73f1b1f6e84f8613a5
       Type: EventFieldPath
       DataType: NodePath
       DisplayName: {"LocaleId":"","Text":"SourceName"}
       Value: "0:SourceName"
-    - Name: ns=8;Time
-      Id: ns=8;g=45b99435f5d7e9ecd558c95dca447c11
+    - Name: ns=47;Time
+      Id: ns=47;g=45b99435f5d7e9ecd558c95dca447c11
       Type: EventFieldPath
       DataType: NodePath
       DisplayName: {"LocaleId":"","Text":"Time"}
       Value: "0:Time"
-    - Name: ns=8;Message
-      Id: ns=8;g=22769a2f1bbe3cf2327520d39b90bb60
+    - Name: ns=47;Message
+      Id: ns=47;g=22769a2f1bbe3cf2327520d39b90bb60
       Type: EventFieldPath
       DataType: NodePath
       DisplayName: {"LocaleId":"","Text":"Message"}
       Value: "0:Message"
-    - Name: ns=8;Severity
-      Id: ns=8;g=9637ae188f996cc9a63f6cff9aecda33
+    - Name: ns=47;Severity
+      Id: ns=47;g=9637ae188f996cc9a63f6cff9aecda33
       Type: EventFieldPath
       DataType: NodePath
       DisplayName: {"LocaleId":"","Text":"Severity"}
       Value: "0:Severity"
-    - Name: ns=8;LocalTime
-      Id: ns=8;g=af1eb1a3e839253dff28a49e5f2bff5f
+    - Name: ns=47;LocalTime
+      Id: ns=47;g=af1eb1a3e839253dff28a49e5f2bff5f
       Type: EventFieldPath
       DataType: NodePath
       DisplayName: {"LocaleId":"","Text":"LocalTime"}
       Value: "0:LocalTime"
   - Name: EventConfigurations
-    Id: ns=8;g=48f29beab3262ac86d07f69255b263a6
+    Id: ns=47;g=48f29beab3262ac86d07f69255b263a6
     Type: BaseObjectType
     DisplayName: {"LocaleId":"","Text":"EventConfigurations"}
     Children:
-    - Name: ns=8;EventConfiguration
-      Id: ns=8;g=b7ea7a7ea33b2b3b35a8c91d5ae5f3a8
+    - Name: ns=47;EventConfiguration
+      Id: ns=47;g=b7ea7a7ea33b2b3b35a8c91d5ae5f3a8
       Type: EventConfiguration
       DisplayName: {"LocaleId":"","Text":"EventConfiguration"}
       Children:
       - Name: MonitorSubtree
-        Id: ns=8;g=55a6ec6d830f3109794e0717f319d754
+        Id: ns=47;g=55a6ec6d830f3109794e0717f319d754
         Type: PropertyType
         DataType: Boolean
         DisplayName: {"LocaleId":"","Text":"MonitorSubtree"}
-        Value: false
       - Name: EventType
-        Id: ns=8;g=05fc97e381579978b886a3fb9cc2b1b3
+        Id: ns=47;g=05fc97e381579978b886a3fb9cc2b1b3
         Type: NodePointer
         DataType: NodeId
         DisplayName: {"LocaleId":"","Text":"EventType"}
         ReferenceType: HasProperty
-        Value: {"Id":2915}
+        Value: "/Types/EventTypes/BaseEventType/ConditionType/AcknowledgeableConditionType/AlarmConditionType"
         Children:
         - Name: Kind
-          Id: ns=8;g=23b21c659719323a1c5a2ddf4a7e7e94
+          Id: ns=47;g=23b21c659719323a1c5a2ddf4a7e7e94
           Type: PropertyType
           DataType: NodeId
           DisplayName: {"LocaleId":"","Text":"Kind"}
-          Value: {"Id":2041}
+          Value: "/Types/EventTypes/BaseEventType"
         - Name: NodeClass
-          Id: ns=8;g=696e70d00747430dcc3fd05d9345db54
+          Id: ns=47;g=696e70d00747430dcc3fd05d9345db54
           Type: PropertyType
           DataType: NodePointerNodeClass
           DisplayName: {"LocaleId":"","Text":"NodeClass"}
           Value: 1
   - Name: EventArguments
-    Id: ns=8;g=6ef2bb8274601a933d0672efc501f752
+    Id: ns=47;g=6ef2bb8274601a933d0672efc501f752
     Type: BaseObjectType
     DisplayName: {"LocaleId":"","Text":"EventArguments"}
     Children:
-    - Name: ns=8;ActiveState_Id
-      Id: ns=8;g=637562d65579c4551f2c162f57c15912
+    - Name: ns=47;ActiveState_Id
+      Id: ns=47;g=637562d65579c4551f2c162f57c15912
       Type: BaseDataVariableType
       DataType: Boolean
       DisplayName: {"LocaleId":"","Text":"ActiveState_Id"}
       Value: true
-    - Name: ns=8;AckedState_Id
-      Id: ns=8;g=95a5b25addf9656fb530f563845c8d16
+    - Name: ns=47;AckedState_Id
+      Id: ns=47;g=95a5b25addf9656fb530f563845c8d16
       Type: BaseDataVariableType
       DataType: Boolean
       DisplayName: {"LocaleId":"","Text":"AckedState_Id"}
-      Value: false
-    - Name: ns=8;ConfirmedState_Id
-      Id: ns=8;g=edcc19fe5968d6529a3c1fbc4450f4b9
+    - Name: ns=47;ConfirmedState_Id
+      Id: ns=47;g=edcc19fe5968d6529a3c1fbc4450f4b9
       Type: BaseDataVariableType
       DataType: Boolean
       DisplayName: {"LocaleId":"","Text":"ConfirmedState_Id"}
       Value: true
-    - Name: ns=8;ConditionName
-      Id: ns=8;g=13e564719de84bd311ca5d42f5054100
+    - Name: ns=47;ConditionName
+      Id: ns=47;g=13e564719de84bd311ca5d42f5054100
       Type: BaseDataVariableType
       DataType: String
       DisplayName: {"LocaleId":"","Text":"ConditionName"}
       Value: "LowLevelTank1"
-    - Name: ns=8;EnabledState_Id
-      Id: ns=8;g=ecfb7fa0ad8032980090ea3464f0d102
+    - Name: ns=47;EnabledState_Id
+      Id: ns=47;g=ecfb7fa0ad8032980090ea3464f0d102
       Type: BaseDataVariableType
       DataType: Boolean
       DisplayName: {"LocaleId":"","Text":"EnabledState_Id"}
       Value: true
-    - Name: ns=8;SourceName
-      Id: ns=8;g=cbec936f7db4ec121edffafaba612707
+    - Name: ns=47;SourceName
+      Id: ns=47;g=cbec936f7db4ec121edffafaba612707
       Type: BaseDataVariableType
       DataType: String
       DisplayName: {"LocaleId":"","Text":"SourceName"}
       Value: "Level"
-    - Name: ns=8;Time
-      Id: ns=8;g=19b5e13436e361e0dc0579b9a38fb3a5
+    - Name: ns=47;Time
+      Id: ns=47;g=19b5e13436e361e0dc0579b9a38fb3a5
       Type: BaseDataVariableType
       DataType: UtcTime
       DisplayName: {"LocaleId":"","Text":"Time"}
-      Value: "2022-09-02T07:56:06.1426608"
-    - Name: ns=8;Message
-      Id: ns=8;g=d056c0ce35d699450a99542a1ac2693d
+      Value: "2024-02-05T16:23:08.9309597"
+    - Name: ns=47;Message
+      Id: ns=47;g=d056c0ce35d699450a99542a1ac2693d
       Type: BaseDataVariableType
       DataType: LocalizedText
       DisplayName: {"LocaleId":"","Text":"Message"}
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-    - Name: ns=8;Severity
-      Id: ns=8;g=f746e3209e233f3d2004184312bc9b71
+    - Name: ns=47;Severity
+      Id: ns=47;g=f746e3209e233f3d2004184312bc9b71
       Type: BaseDataVariableType
       DataType: UInt16
       DisplayName: {"LocaleId":"","Text":"Severity"}
       Value: 1
     - Name: EventTypeId
-      Id: ns=8;g=99cfe73c38cc08d5b1ed5f94d9e0ca5c
+      Id: ns=47;g=99cfe73c38cc08d5b1ed5f94d9e0ca5c
       Type: BaseDataVariableType
       DataType: NodeId
       DisplayName: {"LocaleId":"","Text":"EventTypeId"}
-      Value: {"Id":9482}
-    - Name: ns=8;LocalTime
-      Id: ns=8;g=51bd01f74a90a09ab151bcf168372aaf
+      Value: "/Types/EventTypes/BaseEventType/ConditionType/AcknowledgeableConditionType/AlarmConditionType/LimitAlarmType/ExclusiveLimitAlarmType/ExclusiveLevelAlarmType"
+    - Name: ns=47;LocalTime
+      Id: ns=47;g=51bd01f74a90a09ab151bcf168372aaf
       Type: BaseDataVariableType
       DataType: TimeZoneDataType
       DisplayName: {"LocaleId":"","Text":"LocalTime"}
-      Value: {"TypeId":{"Id":8912},"Body":{"offset":120,"daylightSavingInOffset":true}}
+      Value: 
+       {
+        "TypeId": {
+         "Id": 8912
+        },
+        "Body": {
+         "Offset": 60,
+         "DaylightSavingInOffset": false
+        }
+       }
   - Name: EventFieldsToLog
-    Id: ns=8;g=734b7f821c0c17ea6e4a099c6a138068
+    Id: ns=47;g=734b7f821c0c17ea6e4a099c6a138068
     Type: BaseObjectType
     DisplayName: {"LocaleId":"","Text":"EventFieldsToLog"}
     Children:
-    - Name: ns=8;ActiveState_Id
-      Id: ns=8;g=c47477c6f7b2c9517ac87e5d8425170c
+    - Name: ns=47;ActiveState_Id
+      Id: ns=47;g=c47477c6f7b2c9517ac87e5d8425170c
       Type: EventFieldToLog
       DataType: Boolean
       DisplayName: {"LocaleId":"","Text":"ActiveState_Id"}
       Value: true
-    - Name: ns=8;AckedState_Id
-      Id: ns=8;g=2ec564005381c376db323b43e38129a8
+    - Name: ns=47;AckedState_Id
+      Id: ns=47;g=2ec564005381c376db323b43e38129a8
       Type: EventFieldToLog
       DataType: Boolean
       DisplayName: {"LocaleId":"","Text":"AckedState_Id"}
-      Value: false
-    - Name: ns=8;ConfirmedState_Id
-      Id: ns=8;g=6fc2d72b51a0e3958a089f44d97dfd03
+    - Name: ns=47;ConfirmedState_Id
+      Id: ns=47;g=6fc2d72b51a0e3958a089f44d97dfd03
       Type: EventFieldToLog
       DataType: Boolean
       DisplayName: {"LocaleId":"","Text":"ConfirmedState_Id"}
       Value: true
-    - Name: ns=8;ConditionName
-      Id: ns=8;g=539ec43e889651745e9004be34da9815
+    - Name: ns=47;ConditionName
+      Id: ns=47;g=539ec43e889651745e9004be34da9815
       Type: EventFieldToLog
       DataType: String
       DisplayName: {"LocaleId":"","Text":"ConditionName"}
       Value: "LowLevelTank1"
-    - Name: ns=8;EnabledState_Id
-      Id: ns=8;g=d44c2f6adc585511e43f3184322b4b68
+    - Name: ns=47;EnabledState_Id
+      Id: ns=47;g=d44c2f6adc585511e43f3184322b4b68
       Type: EventFieldToLog
       DataType: Boolean
       DisplayName: {"LocaleId":"","Text":"EnabledState_Id"}
       Value: true
-    - Name: ns=8;SourceName
-      Id: ns=8;g=8f3e7ba9e830d04de379ac4a77787947
+    - Name: ns=47;SourceName
+      Id: ns=47;g=8f3e7ba9e830d04de379ac4a77787947
       Type: EventFieldToLog
       DataType: String
       DisplayName: {"LocaleId":"","Text":"SourceName"}
       Value: "Level"
-    - Name: ns=8;Time
-      Id: ns=8;g=50c6d4371de8b224816c8bbb1e086b81
+    - Name: ns=47;Time
+      Id: ns=47;g=50c6d4371de8b224816c8bbb1e086b81
       Type: EventFieldToLog
       DataType: UtcTime
       DisplayName: {"LocaleId":"","Text":"Time"}
-      Value: "2022-09-02T07:56:06.1426608"
-    - Name: ns=8;Message
-      Id: ns=8;g=9149517099361520e665a31b2b9b1ef9
+      Value: "2024-02-05T16:23:08.9309597"
+    - Name: ns=47;Message
+      Id: ns=47;g=9149517099361520e665a31b2b9b1ef9
       Type: EventFieldToLog
       DataType: LocalizedText
       DisplayName: {"LocaleId":"","Text":"Message"}
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-    - Name: ns=8;Severity
-      Id: ns=8;g=bd23727f63a1740c4dbeed113bd536e5
+    - Name: ns=47;Severity
+      Id: ns=47;g=bd23727f63a1740c4dbeed113bd536e5
       Type: EventFieldToLog
       DataType: UInt16
       DisplayName: {"LocaleId":"","Text":"Severity"}
       Value: 1
-    - Name: ns=8;LocalTime
-      Id: ns=8;g=33ed1f69b09c44c84d832e23a5e5259d
+    - Name: ns=47;LocalTime
+      Id: ns=47;g=33ed1f69b09c44c84d832e23a5e5259d
       Type: EventFieldToLog
       DataType: DateTime
       DisplayName: {"LocaleId":"","Text":"LocalTime"}
-      Value: "2022-09-02T09:56:06.1426608"
+      Value: "2024-02-05T17:23:08.9309597"

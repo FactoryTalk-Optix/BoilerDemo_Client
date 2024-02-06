@@ -1,12 +1,12 @@
 Project:
  Name: BoilerDemo_Client_Design
- ProjectNamespaceIndex: 17
+ ProjectNamespaceIndex: 4
  Description: ''
  Company: ''
  Copyright: ''
  FormatVersion: 1
- ProductVersion: 1.0
- CoreVersion: 1.0
+ ProductVersion: 1.4
+ CoreVersion: 3.0
  Dependencies:
   2:
    Uri: BoilerDemo_Client
@@ -47,15 +47,15 @@ Project:
   14:
    Uri: 'urn:FTOptix:CoreBase'
    Module: FTOptix.CoreBase
-   Version: 1.0
+   Version: 3.1
   15:
    Uri: 'urn:FTOptix:CoreBase:Net'
    Module: FTOptix.CoreBase.Net
-   Version: 1.0
+   Version: 1.1
   16:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
-   Version: 1.0
+   Version: 3.0
   18:
    Uri: '9f78eb2f1f373feb2ad5ccb7e29a5e21#urn:ASPC457:FactoryTalkOptixHMI:FTOptixApplication'
    ServerUri: 9f78eb2f1f373feb2ad5ccb7e29a5e21
@@ -79,9 +79,56 @@ Project:
   24:
    Uri: 'urn:FTOptix:Core:Net'
    Module: FTOptix.Core.Net
-   Version: 1.0
+   Version: 1.2
   25:
    Uri: '9f78eb2f1f373feb2ad5ccb7e29a5e21#9f78eb2f1f373feb2ad5ccb7e29a5e21#urn:DESKTOP-NGN08CH:UnifiedAutomation:UaDemoServerAnsiC'
    ServerUri: 9f78eb2f1f373feb2ad5ccb7e29a5e21
+  26:
+   Uri: '509ffb2d6c5a726913bd64b228971e0d#9f78eb2f1f373feb2ad5ccb7e29a5e21#http://PLCopen.org/OpcUa/IEC61131-3/'
+   ServerUri: 509ffb2d6c5a726913bd64b228971e0d
+  27:
+   Uri: '509ffb2d6c5a726913bd64b228971e0d#BoilerDemo'
+   ServerUri: 509ffb2d6c5a726913bd64b228971e0d
+  28:
+   Uri: '509ffb2d6c5a726913bd64b228971e0d#urn:1P8SSL3:FactoryTalkOptixHMI:FTOptixApplication'
+   ServerUri: 509ffb2d6c5a726913bd64b228971e0d
+  29:
+   Uri: '509ffb2d6c5a726913bd64b228971e0d#Temporary'
+   ServerUri: 509ffb2d6c5a726913bd64b228971e0d
+  30:
+   Uri: '509ffb2d6c5a726913bd64b228971e0d#9f78eb2f1f373feb2ad5ccb7e29a5e21#urn:ASPC553.asem.intra:UnifiedAutomation:UaDemoServerAnsiC'
+   ServerUri: 509ffb2d6c5a726913bd64b228971e0d
+  31:
+   Uri: '509ffb2d6c5a726913bd64b228971e0d#9f78eb2f1f373feb2ad5ccb7e29a5e21#http://opcfoundation.org/UA/DI/'
+   ServerUri: 509ffb2d6c5a726913bd64b228971e0d
+  32:
+   Uri: '509ffb2d6c5a726913bd64b228971e0d#9f78eb2f1f373feb2ad5ccb7e29a5e21#http://www.unifiedautomation.com/DemoServer/'
+   ServerUri: 509ffb2d6c5a726913bd64b228971e0d
+  33:
+   Uri: '509ffb2d6c5a726913bd64b228971e0d#9f78eb2f1f373feb2ad5ccb7e29a5e21#urn:ASPC508.asem.intra:UnifiedAutomation:UaDemoServerAnsiC'
+   ServerUri: 509ffb2d6c5a726913bd64b228971e0d
+  17:
+   Uri: '509ffb2d6c5a726913bd64b228971e0d#9f78eb2f1f373feb2ad5ccb7e29a5e21#urn:bm100:UnifiedAutomation:UaDemoServerAnsiC'
+   ServerUri: 509ffb2d6c5a726913bd64b228971e0d
+  34:
+   Uri: '509ffb2d6c5a726913bd64b228971e0d#9f78eb2f1f373feb2ad5ccb7e29a5e21#urn:DESKTOP-NGN08CH:UnifiedAutomation:UaDemoServerAnsiC'
+   ServerUri: 509ffb2d6c5a726913bd64b228971e0d
+  35:
+   Uri: '509ffb2d6c5a726913bd64b228971e0d#9f78eb2f1f373feb2ad5ccb7e29a5e21#urn:DESKTOP-VUVES76:UnifiedAutomation:UaDemoServerAnsiC'
+   ServerUri: 509ffb2d6c5a726913bd64b228971e0d
+  36:
+   Uri: '509ffb2d6c5a726913bd64b228971e0d#9f78eb2f1f373feb2ad5ccb7e29a5e21#urn:ASPC457.asem.intra:UnifiedAutomation:UaDemoServerAnsiC'
+   ServerUri: 509ffb2d6c5a726913bd64b228971e0d
+ Statistics:
+  TotalNodeCount: 5
+  Objects: 1
+  ObjectTypes: 0
+  Variables: 4
+  VariableTypes: 0
+  DataTypes: 0
+  Methods: 0
+  References: 0
+  ReferenceTypes: 0
+  Files: 1
  Nodes:
  - File: 'DesignTimeNodes/OPC-UA/OPCUAClient/OPCUATagImporter.yaml'
